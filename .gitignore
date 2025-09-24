@@ -139,8 +139,10 @@ cython_debug/
 
 # Application specific
 # 配置和数据文件
-data/
-logs/
+data/*
+!data/.gitkeep
+logs/*
+!logs/.gitkeep
 *.log
 
 # API密钥和敏感信息

@@ -102,7 +102,7 @@ ScreenTranslate-AI/
 │   ├── ui/                 # 用户界面
 │   └── utils/              # 工具组件
 ├── resources/              # 资源文件
-├── data/                   # 运行时数据
+├── data/                   # 运行时数据（如 config.json、history.json）
 │   └── history.json        # 翻译历史
 └── logs/                   # 运行时日志
 ```
@@ -178,5 +178,6 @@ sudo yum install qt6-qtbase qt6-qtbase-gui
 
 - 项目主页：[https://github.com/Liu-Bot24/ScreenTranslate-AI](https://github.com/Liu-Bot24/ScreenTranslate-AI)
 - 问题反馈：[Issues](https://github.com/Liu-Bot24/ScreenTranslate-AI/issues)
+
 
 
