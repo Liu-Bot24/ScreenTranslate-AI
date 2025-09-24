@@ -204,3 +204,6 @@ models/
 *.pkl
 *.pth
 *.onnx
+
+src/data/
+nul

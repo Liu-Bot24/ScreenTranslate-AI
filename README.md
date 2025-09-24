@@ -102,7 +102,8 @@ ScreenTranslate-AI/
 │   ├── ui/                 # 用户界面
 │   └── utils/              # 工具组件
 ├── resources/              # 资源文件
-├── data/                   # 运行时数据（如 config.json、history.json）
+├── data/                   # 运行时数据
+│   ├── config.json        # 配置文件   
 │   └── history.json        # 翻译历史
 └── logs/                   # 运行时日志
 ```
