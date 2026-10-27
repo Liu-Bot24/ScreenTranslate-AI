@@ -1,184 +1,48 @@
-# ScreenTranslate-AI
+# 译取
 
-一款通过截图、OCR和大型语言模型实现屏幕内容即时翻译和解释的桌面效率工具。
+译取是一款 Windows 桌面翻译工具。选中文字、截一张图，或复制一段内容，按下快捷键就能看到译文，不用切换窗口，也不用复制粘贴。
 
-## 功能特性
+## 功能
 
-- 🔥 **全局快捷键截图**：Alt+3 一键启动截图翻译
-- 🤖 **智能文字识别**：基于 EasyOCR 的多语言 OCR 引擎
-- 🌐 **实时翻译**：集成多种 LLM API（OpenAI、SiliconFlow、豆包等）
-- 📚 **历史记录管理**：自动保存翻译历史，支持搜索和导出
-- 🎨 **现代化界面**：系统托盘应用，结果悬浮窗显示
-- 🔧 **高度可配置**：支持语言、模型、热键等自定义配置
+- **随处取词**：可以翻译选中的文字、截图区域、剪贴板中的文本或图片，也可以手动输入。
+- **多模型对照**：可同时接入多个兼容 OpenAI 接口的大模型服务，各自的译文并排显示，方便比较。
+- **文字识别**：支持截图和图片文件识别，提供 Windows OCR、RapidOCR（本地离线）、Tesseract 和视觉模型四种引擎。
+- **Markdown 渲染**：原文和译文都可以一键切换渲染，粗体、列表、表格、代码块等按格式显示，关闭后恢复原始文本。
+- **朗读**：使用系统语音朗读原文或译文，再次点击即可停止。
+- **历史与收藏**：自动保存翻译记录，常用内容可以收藏，也可以一键重新使用原文。
+- **自动目标语言**：设置主要语言和次要语言后，原文是主要语言时译为次要语言，否则译为主要语言。
+- **常驻托盘**：关闭窗口后仍在后台待命，界面跟随 Windows 浅色或深色主题。
 
-## 系统要求
+## 快捷键
 
-- **操作系统**：Windows 10+、Ubuntu 20.04+、macOS 10.15+
-- **Python 版本**：Python 3.8+
-- **内存**：建议 4GB 以上
-- **磁盘空间**：至少 500MB 可用空间
+| 操作 | 快捷键 |
+| --- | --- |
+| 划词翻译 | Alt+Q |
+| 截图翻译 | Alt+W |
+| 输入翻译 | Alt+E |
+| 截图 OCR | Alt+R |
+| 剪贴板翻译 | Alt+C |
+| 翻译输入内容 | Ctrl+Enter |
+| 取消 / 隐藏窗口 | Esc |
 
-## 快速开始
+## 安装
 
-### 从源代码运行
+1. 从 [Releases](https://github.com/Liu-Bot24/ScreenTranslate-AI/releases) 下载 `YiQu-Setup-<版本>.exe` 并运行。安装无需管理员权限，也不需要单独安装 .NET。
+2. 打开“设置 → 翻译服务”，填写服务的接口地址、模型名称和 API Key。可以添加多个服务。
+3. 默认使用 Windows OCR 识别文字。如需离线识别效果更好的 RapidOCR，可在“设置 → 文字识别 OCR”中一键下载（约 128 MB），下载完成后保存设置即可。
 
-```bash
-# 1. 克隆项目
-git clone https://github.com/Liu-Bot24/ScreenTranslate-AI.git
-cd ScreenTranslate-AI
+系统要求：Windows 10（1809 或更高版本）或 Windows 11，64 位。
 
-# 2. 创建并激活虚拟环境（Windows 示例）
-python -m venv .venv
-.venv\Scripts\activate
+## 隐私
 
-#   macOS / Linux
-# python -m venv .venv
-# source .venv/bin/activate
+- API Key 使用 Windows 账户加密，只保存在本机。
+- 设置、历史和 OCR 组件保存在 `%LOCALAPPDATA%\YiQu`。升级或卸载时会保留这些数据，安装包中也不包含任何个人数据。
+- 待翻译的文本只发送到你配置的翻译服务。Windows OCR、RapidOCR 和 Tesseract 都在本机识别；只有选择视觉模型时，待识别的图片才会发送到对应服务。
 
-# 3. 安装依赖
-pip install -r requirements.txt
+## 从源码构建
 
-# 4. 启动应用程序
-python main.py
-```
-
-## 配置说明
-
-### API 配置
-
-首次使用需要配置 LLM API 密钥。应用程序启动后：
-
-1. 右键点击系统托盘图标
-2. 选择“设置”
-3. 在 LLM 配置页输入 API 密钥
-
-支持的 API 提供商：
-- **OpenAI**: `https://api.openai.com/v1/chat/completions`
-- **SiliconFlow**: `https://api.siliconflow.cn/v1/chat/completions`
-- **字节跳动豆包**: `https://ark.cn-beijing.volces.com/api/v3/chat/completions`
-- **自定义 API**: 兼容 OpenAI Chat Completions 协议的服务
-
-### 热键配置
-
-默认热键为 `Alt+3`，可在设置中修改为其他组合键。
-
-### OCR 语言
-
-支持多种语言的文字识别：中文（简体/繁体）、英语、日语、韩语、法语、德语、西班牙语、俄语、阿拉伯语等。
-
-## 使用方法
-
-1. **启动应用程序**：执行 `python main.py` 或运行可执行文件
-2. **截图翻译**：使用热键 `Alt+3` 或双击托盘图标，框选区域后等待识别与翻译
-3. **查看历史**：右键托盘图标 → “历史记录”
-4. **调整设置**：右键托盘图标 → “设置”
-
-## 界面预览
-
-![截图1](readme/截图1.png)
-
-![截图2](readme/截图2.png)
-
-![截图3](readme/截图3.png)
-
-![截图4](readme/截图4.png)
-
-![截图5](readme/截图5.png)
-
-![截图6](readme/截图6.png)
-
-## 项目结构
-
-```
-ScreenTranslate-AI/
-├── main.py                 # 程序入口
-├── requirements.txt        # 依赖列表
-├── README.md               # 项目说明
-├── ico.png                 # 应用图标
-├── src/                    # 源代码
-│   ├── main.py             # 主程序逻辑
-│   ├── config/             # 配置管理
-│   ├── core/               # 核心模块（OCR、截图、热键等）
-│   ├── ui/                 # 用户界面
-│   └── utils/              # 工具组件
-├── resources/              # 资源文件
-├── data/                   # 运行时数据
-│   ├── config.json        # 配置文件   
-│   └── history.json        # 翻译历史
-└── logs/                   # 运行时日志
-```
-
-## 开发指南
-
-### 环境设置
-
-1. 使用 Python 3.8+ 版本
-2. 建议在 `.venv` 虚拟环境中开发
-3. 安装依赖：`pip install -r requirements.txt`
-
-### 添加新功能
-
-1. 在 `src/` 对应模块中实现功能
-2. 如需新增依赖，更新 `requirements.txt`
-3. 补充文档与测试
-
-### 代码规范
-
-- 使用 UTF-8 编码
-- 遵循 PEP 8
-- 建议添加类型注解和文档字符串
-- 选择有意义的命名
-
-## 常见问题
-
-### Q: 应用程序无法启动？
-A: 确认虚拟环境中依赖是否安装完整，可重新执行 `pip install -r requirements.txt`。
-
-### Q: OCR 识别不准确？
-A: 确保截图区域清晰，并尝试调整 OCR 设置或选择合适的语言。
-
-### Q: 热键不工作？
-A: 检查热键是否被其他程序占用，可以在设置中更换组合键。
-
-### Q: macOS 需要授权吗？
-A: 请在“系统偏好设置 > 安全性与隐私 > 隐私”中授予屏幕录制和辅助功能权限。
-
-### Q: Linux 上界面显示异常？
-A: 安装 Qt6 相关库，例如：
-```bash
-# Ubuntu/Debian
-sudo apt install libqt6-core6 libqt6-gui6 libqt6-widgets6
-
-# CentOS/RHEL
-sudo yum install qt6-qtbase qt6-qtbase-gui
-```
+参见 [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)。
 
 ## 许可证
 
-项目采用 MIT 许可证，详见 [LICENSE](LICENSE)。
-
-## 贡献指南
-
-欢迎提交 Issue 和 Pull Request：
-
-1. Fork 本仓库
-2. 创建分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 发起 Pull Request
-
-## 更新日志
-
-### v1.0.0
-- 初始版本发布
-- 支持截图 OCR 翻译
-- 多平台兼容
-- 提供历史记录功能
-
-## 联系方式
-
-- 项目主页：[https://github.com/Liu-Bot24/ScreenTranslate-AI](https://github.com/Liu-Bot24/ScreenTranslate-AI)
-- 问题反馈：[Issues](https://github.com/Liu-Bot24/ScreenTranslate-AI/issues)
-
-
-
+[MIT](LICENSE)

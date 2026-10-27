@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <UseWPF>true</UseWPF><UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable><ImplicitUsings>disable</ImplicitUsings>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <AssemblyName>YiQu</AssemblyName><RootNamespace>YiQu</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\YiQu.ico</ApplicationIcon>
+    <Version>1.0.0</Version><Product>译取</Product><Company>YiQu</Company>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\YiQu.ico" LogicalName="YiQu.ico" />
+    <EmbeddedResource Include="Assets\rapidocr-runtime.json" LogicalName="YiQu.rapidocr-runtime.json" />
+    <Content Include="ocr_local.py" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Markdig" Version="1.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="YiQu.Cli" />
+  </ItemGroup>
+</Project>

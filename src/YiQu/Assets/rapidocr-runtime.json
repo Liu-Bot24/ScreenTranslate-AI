@@ -1,0 +1,230 @@
+{
+  "id": "rapidocr-3.8.0-py312-win64-v1",
+  "files": [
+    {
+      "name": "Python 3.12.10",
+      "url": "https://api.nuget.org/v3-flatcontainer/python/3.12.10/python.3.12.10.nupkg",
+      "hash": "bbda4dcf688a94211b62d50968a91b38f305d0b8d1ecd90269f74a86f8a0a4fcebb7ca162a0753a47691eb3df0c964009bd3d8194c6fd19afae8d5fd01e1cc0f",
+      "algorithm": "SHA512",
+      "size": 14515433,
+      "kind": "python",
+      "target": "."
+    },
+    {
+      "name": "certifi",
+      "url": "https://files.pythonhosted.org/packages/c4/51/29046e48f693c54e5b7412216d447a1d8362c9653148d98c02cdf65fa733/certifi-2026.10.19-py3-none-any.whl",
+      "hash": "42d35340cc5b9ba78e818ddbff0c5b1c2b779de448a340fd1b989f5fa8670e1b",
+      "algorithm": "SHA256",
+      "size": 136464,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "charset-normalizer",
+      "url": "https://files.pythonhosted.org/packages/eb/e6/e6e083884cbcfd49c64865af05027fe7011be7b2d9179524f099a1b611f3/charset_normalizer-3.5.2-cp312-cp312-win_amd64.whl",
+      "hash": "780fbe7cab297b81dad9fb8dc5eb003c0468ffb0d9e5f65068c53a34661a96bc",
+      "algorithm": "SHA256",
+      "size": 207486,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "colorama",
+      "url": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+      "hash": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "algorithm": "SHA256",
+      "size": 25335,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "colorlog",
+      "url": "https://files.pythonhosted.org/packages/d4/19/0b6647bf5e331521e55d2b63bfbdc210bd9cd605189273f03614a05f702d/colorlog-6.12.0-py3-none-any.whl",
+      "hash": "30d392604e9110045a2c2aeefc27d7a017abbab63f3a8aee594eac0801df784e",
+      "algorithm": "SHA256",
+      "size": 12239,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "flatbuffers",
+      "url": "https://files.pythonhosted.org/packages/e8/2d/d2a548598be01649e2d46231d151a6c56d10b964d94043a335ae56ea2d92/flatbuffers-25.12.19-py2.py3-none-any.whl",
+      "hash": "7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4",
+      "algorithm": "SHA256",
+      "size": 26661,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "idna",
+      "url": "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl",
+      "hash": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "algorithm": "SHA256",
+      "size": 69583,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "numpy",
+      "url": "https://files.pythonhosted.org/packages/12/33/fefe62073dc8acfd0f2b9ed7c003af2f50aa61555e113e6db02b8f79f145/numpy-2.5.4-cp312-cp312-win_amd64.whl",
+      "hash": "a7b1b6353e36a7e50de2973a38d705c88ee93adcf120673cee7f45a4a3fa223a",
+      "algorithm": "SHA256",
+      "size": 12573091,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "omegaconf",
+      "url": "https://files.pythonhosted.org/packages/4f/bd/0d9f8247b0819385213d09564eda5c52d3673313c2414d51f72883ec24cd/omegaconf-2.4.0-py3-none-any.whl",
+      "hash": "f141a664c777582405e3cc6e0545ecc79429e79f844995b1a6e71c35946a025c",
+      "algorithm": "SHA256",
+      "size": 254152,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "onnxruntime",
+      "url": "https://files.pythonhosted.org/packages/be/ed/b12cea136ccd7b03d924f46b8393faf7ceac21115c0c50e729faa248cf23/onnxruntime-1.31.0-cp312-cp312-win_amd64.whl",
+      "hash": "09d56445c1753e66e0912de69d3f0184016ad9a191dcd6925bf5dd570d2bfbe5",
+      "algorithm": "SHA256",
+      "size": 14888841,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "opencv-python",
+      "url": "https://files.pythonhosted.org/packages/21/f0/9fa6e85cb10c8eb36a0222d27e50fe381b86ce49a55446bf39f491727564/opencv_python-5.0.0.93-cp37-abi3-win_amd64.whl",
+      "hash": "f90ba04b8f73bc5c3814037699739f0156f597338a98f05956c684e7c3ca10d2",
+      "algorithm": "SHA256",
+      "size": 44000345,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "packaging",
+      "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+      "hash": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "algorithm": "SHA256",
+      "size": 129956,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "pillow",
+      "url": "https://files.pythonhosted.org/packages/ff/cd/73a79ecdc822076002eb24b5e1e4a530b0bb5310fcb6d239abbec877110b/pillow-13.0.0-cp312-cp312-win_amd64.whl",
+      "hash": "ff3fe9eb621fbb9db4c4be33ab946f6bac5f98ab50ca8d3260503653656c961b",
+      "algorithm": "SHA256",
+      "size": 7272166,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "protobuf",
+      "url": "https://files.pythonhosted.org/packages/8a/55/b77bda4e5e5f5971fb51b07663694690e9afdb9402136c16a522bd621cad/protobuf-7.36.2-cp310-abi3-win_amd64.whl",
+      "hash": "a300819d441e078a5608c0d3c709796bb548136058fda017ae51d425b44fd353",
+      "algorithm": "SHA256",
+      "size": 456514,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "pyclipper",
+      "url": "https://files.pythonhosted.org/packages/97/77/dfea08e3b230b82ee22543c30c35d33d42f846a77f96caf7c504dd54fab1/pyclipper-1.4.0-cp312-cp312-win_amd64.whl",
+      "hash": "d1e5498d883b706a4ce636247f0d830c6eb34a25b843a1b78e2c969754ca9037",
+      "algorithm": "SHA256",
+      "size": 104619,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "PyYAML",
+      "url": "https://files.pythonhosted.org/packages/86/bf/899e81e4cce32febab4fb42bb97dcdf66bc135272882d1987881a4b519e9/pyyaml-6.0.3-cp312-cp312-win_amd64.whl",
+      "hash": "5fcd34e47f6e0b794d17de1b4ff496c00986e1c83f7ab2fb8fcfe9616ff7477b",
+      "algorithm": "SHA256",
+      "size": 154003,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "rapidocr",
+      "url": "https://files.pythonhosted.org/packages/49/1f/5f815e17c0b02b8f937b5b680b85d0ec5f34b195314dfa8f11ed14a6de03/rapidocr-3.8.0-py3-none-any.whl",
+      "hash": "54abb10883d588120a3390bc447566f1590aea641e127f63a4ca44415fecd18a",
+      "algorithm": "SHA256",
+      "size": 15082360,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "requests",
+      "url": "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl",
+      "hash": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0",
+      "algorithm": "SHA256",
+      "size": 73075,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "shapely",
+      "url": "https://files.pythonhosted.org/packages/f6/26/ba9192f0a72c830aa8cc1c61e207ada57cc54b7de81668b1836f575ee717/shapely-2.2.0-cp312-cp312-win_amd64.whl",
+      "hash": "90895df6542ae039fc6557dec6194e3509e883fbd6f5788e3c3e7a38fe46b257",
+      "algorithm": "SHA256",
+      "size": 1791280,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "six",
+      "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+      "hash": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "algorithm": "SHA256",
+      "size": 11050,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "tqdm",
+      "url": "https://files.pythonhosted.org/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl",
+      "hash": "c293e525e6fef9c20e8728fd4612df02a0aa31bb5fe91ecd93e123b1b7bffa73",
+      "algorithm": "SHA256",
+      "size": 80199,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "urllib3",
+      "url": "https://files.pythonhosted.org/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl",
+      "hash": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3",
+      "algorithm": "SHA256",
+      "size": 135717,
+      "kind": "wheel",
+      "target": "tools/Lib/site-packages"
+    },
+    {
+      "name": "ch_PP-OCRv5_det_mobile.onnx",
+      "url": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.8.0/onnx/PP-OCRv5/det/ch_PP-OCRv5_det_mobile.onnx",
+      "hash": "4d97c44a20d30a81aad087d6a396b08f786c4635742afc391f6621f5c6ae78ae",
+      "algorithm": "SHA256",
+      "size": 4819576,
+      "kind": "model",
+      "target": "tools/Lib/site-packages/rapidocr/models/ch_PP-OCRv5_det_mobile.onnx"
+    },
+    {
+      "name": "ch_PP-OCRv5_rec_mobile.onnx",
+      "url": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.8.0/onnx/PP-OCRv5/rec/ch_PP-OCRv5_rec_mobile.onnx",
+      "hash": "5825fc7ebf84ae7a412be049820b4d86d77620f204a041697b0494669b1742c5",
+      "algorithm": "SHA256",
+      "size": 16631306,
+      "kind": "model",
+      "target": "tools/Lib/site-packages/rapidocr/models/ch_PP-OCRv5_rec_mobile.onnx"
+    },
+    {
+      "name": "ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+      "url": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.8.0/onnx/PP-OCRv4/cls/ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+      "hash": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+      "algorithm": "SHA256",
+      "size": 585532,
+      "kind": "model",
+      "target": "tools/Lib/site-packages/rapidocr/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx"
+    }
+  ]
+}
